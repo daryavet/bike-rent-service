@@ -1,0 +1,43 @@
+@import '../../../style/_vars.scss';
+
+.start_theft_info{
+    margin: 20px auto;
+    background-color: unset;
+    border: 2px solid $danger; 
+    border-radius:10px;
+    padding: 20px 10px;
+    &_text{
+        font-size: 18px;
+        &_attention{
+            line-height: 44px;
+            font-size: 20px;
+            font-weight: 600;
+            font-style: italic;
+            color:$danger;
+        }
+    }
+    &_btn{
+        display:block;
+        outline: none;
+        border: 2px solid $danger;
+        border-radius: 5px;
+        padding:10px 5px;
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-left: auto;
+        width: 200px;
+        font-size: 16px;
+        font-weight: 600;
+        color:$danger;
+        transition: .5 all;
+        &:hover{
+            border: 5px solid $danger;
+            box-shadow: 10px 17px 12px 0px rgba(243, 26, 14, 0.282);
+        }
+        &:active{
+            box-shadow: 5px 6px 10px 0px rgba(243, 26, 14, 0.282);
+            transform: translateX(2px);
+        }
+        }
+        
+    }

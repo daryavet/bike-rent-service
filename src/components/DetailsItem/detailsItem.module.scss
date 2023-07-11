@@ -1,0 +1,17 @@
+@import '../../style/vars';
+
+.details{
+    border-bottom: 1px solid $blue-violet; 
+    margin: 0 auto;
+    width: 80%;
+    &_item{
+        list-style-type: none;
+        text-align: left;
+        font-size: 12px;
+        &_title {
+            font-weight: 900;
+            font-size: 14px;
+        }
+    }
+
+}

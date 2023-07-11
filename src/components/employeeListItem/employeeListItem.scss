@@ -1,0 +1,90 @@
+@import '../../style/vars';
+
+
+.officers{
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    &_link{
+        text-decoration: none;
+    }
+}
+.officer{
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.171);
+    height: 35px;
+    font-size: 14px;
+    color:$blue-violet;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover{
+        background-color: $white-blue;
+    }
+    &_name{
+       width:20vw;
+        cursor:pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+        
+    }
+    &_email{
+       width:20vw; 
+    }
+    &_approved{
+        width:200px;
+        text-align: center;
+       
+
+        &_icn{
+            margin: 0 auto;
+            font-size: 26px;
+            color: rgba(30, 29, 17, 0.338);
+            cursor:pointer;
+            
+           
+        }
+        
+    }
+}
+.approved{
+    &_icn{
+        color:rgba(209, 223, 11, 0.809); 
+    font-size: 30px;
+    }  
+}
+
+.column{
+    padding: 5px;
+    cursor:default;
+    background-color:$blue-violet;
+    height: 45px;
+    color:white;
+    font-weight: 900;
+    font-size: 14px;
+    border-bottom: none;
+    &:hover{
+        background-color: $blue-violet;
+    }
+}
+
+
+
+@media(max-width: 910px){
+    .officer{
+        &_name{
+            width:40vw
+        }
+        &_email{
+            width: 40vw;
+        }
+        &_approved{
+            width:20vw;
+        }
+    }
+}

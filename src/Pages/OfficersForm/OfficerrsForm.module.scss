@@ -1,0 +1,20 @@
+.checkbox{
+    width:40vw;
+    &_label{
+        margin-top: 10px;
+        display:inline-block;
+        
+    }
+    &_input{
+        display:inline-block;
+        margin-left: 15px;
+    }
+    
+}
+
+@media (max-width:500px){
+    .checkbox{
+        width: 70vw;
+    }
+}
+

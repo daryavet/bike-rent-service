@@ -1,0 +1,72 @@
+@import '../../style/vars.scss';
+
+.reports{
+    padding:10px;
+    margin-top: 20px;
+    width: 80vw;
+    margin: 0 auto;
+    list-style-type: none;
+    background-color:$blue-violet;
+    border-radius: 20px;
+    &_header{
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+}
+
+.report_list_item{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    background-color: white;
+    &:hover{
+        background-color: rgb(220, 225, 178);
+    }
+    
+}
+
+.list_item{
+    width: 20vw;
+    text-align: center;
+    border-bottom:1px solid $blue-violet;
+    cursor:pointer;
+    &:first-child{
+        width: 10vw;
+    }
+    &:nth-child(2){
+        width: 30vw;
+    }
+   
+    &_header{
+     cursor:default;
+     background-color:$blue-violet;
+     color:white;
+     padding:5px 0;
+     text-transform: uppercase;
+     font-size: 14px;
+
+    }
+
+}
+.link{
+    text-decoration: none;
+}
+
+@media(max-width: 500px){
+    .reports{
+        width: 95vw;
+    }
+    .list_item{
+        width: 40vw;
+        &:first-child{
+            width: 15vw;
+        }
+        &_header{
+         font-size: 12px;
+        }
+    
+    }
+}

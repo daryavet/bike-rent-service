@@ -1,0 +1,54 @@
+@import '../../style/vars.scss';
+.addLink{
+    margin-left: 10px;
+    margin-top:20px;
+    display:inline-block;
+    width: 250px;
+    height: 40px;
+    background-color:$blue-violet;
+    border-radius: 10px;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 31px;
+    padding-left:25px;
+    cursor:pointer;
+    &::before{
+        content:"+";
+        position:relative;
+        right:15px;
+        top:4px;
+        font-size: 30px;
+        margin-right: 5px;
+    }
+    &:hover{
+        transform:scale(1.05)
+    }
+}
+
+.officersListWrapper{
+    margin-left:10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+.officers_list{
+    width: 500px;
+    margin-right: 15px;
+}
+
+@media(max-width: 910px){
+    .officersListWrapper{
+        width: 100%;
+        padding: 0 5px;
+        margin: 10px auto;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .officers_list{
+        width: 100%;
+    }
+}

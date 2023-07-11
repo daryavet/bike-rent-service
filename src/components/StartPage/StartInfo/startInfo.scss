@@ -1,0 +1,86 @@
+@import '../../../style/_vars.scss';
+
+.start{
+    padding: 150px 30px 0 40px;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    &_header{
+        color:$blue;
+        font-size: 50px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &_subheader{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        background:rgba(86, 112, 228, 0.437);
+    }
+    &_content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        border-radius: 20px;
+        background-color:rgba(255, 255, 255, 0.567);
+        padding: 20px;
+        &_header{
+            display:block;
+            width:fit-content;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: rgba(58, 68, 94, 0.096);
+
+        }
+        &_wrapper{
+            display:flex;
+            flex-wrap:wrap;
+            align-items: center;
+            justify-content: space-around;
+            &_item{
+                margin-top: 30px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                width: 300px;
+                height: 300px;
+                padding: 5px;
+                &_img{
+                    width: 200px;
+                    height: 200px;
+                    border: 2px solid black;
+                    border-radius:50%;
+                    object-fit: cover;
+
+                }
+                &_descr{
+                    margin-top: 20px;
+                }
+            }
+
+        }
+     }
+}
+
+@media (max-width:672px){
+    .start_header{
+        font-size: 34px;
+    }
+    .start_content_header{
+        font-size: 16px;
+        width:100%;
+        text-align: center;
+    }
+    .start_content{
+        flex-direction: column;
+    }
+    .start_content_wrapper_item{
+        margin-top: 0;
+        &:first-child{
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@import '../../style/vars';
+
+.modal {
+	width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    position:fixed;
+    top: 0;
+    left:0;
+    z-index:4;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s all;
+    &__content{
+        margin-top: 100px;
+        padding:10px;
+        background-color: $white-blue;
+        border-radius:10px;
+        width: 50vw;
+        max-height: 70vh;
+        overflow-y: auto;
+        transform: scale(0.5);
+        transition: 0.5s all;    
+       
+    }
+    &__img {
+        width: 1,6vw;
+        display: flex;
+        position: absolute;
+        z-index: 20;
+        right: 28vw;
+        top: 108px;
+        cursor: pointer;
+        &:hover{
+            transform:scale(1.1);
+        }
+    } 
+}
+
+.modal.active{
+    opacity:1;
+    pointer-events: all;
+}
+.modal__content.active{
+    transform:scale(1);
+    &:hover{
+        box-shadow: 2px 5px 58px -7px rgba(242, 245, 247, 0.62);
+    }
+    
+}
+
+@media (max-width: 500px) {
+	.modal__content{
+		width: 90vw;
+	}
+    .modal__img{
+        width: 4vw;
+        right: 8vw;
+    }
+}
+
+
+
+
+

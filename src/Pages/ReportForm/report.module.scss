@@ -1,0 +1,35 @@
+@import '../../style/vars.scss';
+
+.select{
+    width: 40vw;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 5px;
+}
+select{
+    width:100%;
+}
+label{
+    display:block;
+    font-size: 14px;
+    font-weight: 600;
+    color: $blue-violet;
+    margin-top:5px;
+    margin-right: 5px;
+}
+.report_process{
+    color:$blue-violet;
+    font-size: 14px;
+    font-weight: 600;
+}
+.form_edit_wrapper{
+    width:70vw;
+    margin: 0 auto;
+}
+   
+
+@media (max-width: 500px) {
+	.select{
+		width: 70vw;
+	}
+}

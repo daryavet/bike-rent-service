@@ -1,0 +1,63 @@
+@import "../../style/vars";
+.card{
+    position: absolute;
+    padding: 10px;
+    top: 138px;
+    right: 7.5vw;
+    width: 85vw;
+    background: $white-blue;
+    border: 5px solid $blue;
+    border-top: 35px solid $blue;
+    border-radius: 5px;
+    color: $blue-violet;
+    font-size: 19px;
+    font-weight: 900;
+}
+.actions{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.cross{
+    display:block;
+    margin-top: -37px;
+    margin-bottom: 15px;
+    width: 30px;
+    margin-left: auto;
+}
+.editLink{
+    margin-right: 10px;
+    background-color: white;
+    border: 2px solid $blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $blue;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding:5px;
+    transition: .5s all;
+    cursor: pointer;
+    &:hover{
+        background-color: $blue;
+        color: white;
+    }
+}
+
+.officer_info{
+    width: 50vw;
+    margin-left: 10px;
+    
+}
+
+@media (max-width: 768px){
+    .card{
+        width: 95vw;
+        right: 2.5vw;
+        top: 113px;
+    }
+    .officer_info{
+        width:80vw;
+    }
+}

@@ -1,0 +1,130 @@
+@import '../../style/_vars.scss';
+
+.header {
+    width: 100vw;
+    height: 90px;
+    background-color: $white-blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: fixed;
+    z-index: 1;
+    &_link{
+        text-decoration: none;
+    }
+    &__logo{
+        width:50vw;
+        margin-right:auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &_img{
+           height: fit-content;
+        }
+        &_line{
+            display:block;
+            width: 2px;
+            height: 70px;
+            margin-left: 10px;
+            background: black;
+        }
+        &_info{
+            display: flex;
+            flex-direction: column;
+            margin-left:10px;
+            &_name{
+                font-size: 40px;
+                text-transform: uppercase;
+                font-weight: 800;
+                
+            }
+        }   
+    }
+    &__auth{
+        
+        &_hamburger{
+            width:30px;
+            height: 21px;
+            margin-left: 20px;
+            position:relative;
+            cursor: pointer;
+            &:before{
+                content:'';
+                position:absolute;
+                top:0;
+                width:30px;
+                background-color: black;
+                height: 2px;
+            }
+            &::after{
+                content:'';
+                position:absolute;
+                bottom:0;
+                width:30px;
+                background-color: black;
+                height: 2px;
+                transition: .5s all;
+
+            }
+            &_line{
+                content:'';
+                position:absolute;
+                top: 9px;
+                width:30px;
+                background-color: black;
+                height: 2px;
+                transition: .87s all
+
+            }
+            
+        }
+    }
+}
+.menu{
+    display:block;
+    position: fixed;
+    background-color: $white-blue;
+    margin-top: 70px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vw;
+}
+
+.cross.header__auth_hamburger{
+    transform: rotate(-45deg);
+    &::after{
+        transform: rotate(90deg)translateX(-10px);
+        
+    }
+    &::before{
+        display:none;
+    }
+    
+}
+
+@media (max-width:768px) {
+    .header{
+        height: 60px;
+        padding: 5px 10px;
+        &__logo{
+            width: fit-content;
+            &_line{
+                height: 40px;
+                width: 1px;
+                margin-left: 5px;
+            }
+            &_info{
+                margin-left: 10px;
+                &_name{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+	.menu{
+    margin-top: 60px;
+	width: 50vw;
+	}
+}
